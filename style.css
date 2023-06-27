@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+
+  .calculator {
+    max-width: 300px;
+    margin: 10rem auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+
+  .calculator input[type="button"] {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    background-color: #e6e6e6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .calculator input[type="button"]:hover {
+    background-color: #d4d4d4;
+  }
+
+  .calculator input[type="button"]:active {
+    background-color: #bfbfbf;
+  }
+
+  .calculator input[type="text"] {
+    grid-column: 1 / span 4;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .calculator input[type="button"].delete {
+    grid-column: 1 / span 2;
+    background-color: #ff9999;
+    color: #fff;
+  }
+
+  .calculator input[type="button"].clear {
+    grid-column: 3 / span 2;
+    background-color: #999999;
+    color: #fff;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .calculator {
+      max-width: 350px;
+    }
+}
